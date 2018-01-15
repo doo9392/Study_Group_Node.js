@@ -1,0 +1,1 @@
+console.log('Hello world'); //node ch01_test0.js => Hello world

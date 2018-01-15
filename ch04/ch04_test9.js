@@ -3,7 +3,7 @@ var fs = require("fs");
 fs.open("./output.txt", "r", function(err, fd) {
     if(err) throw err;
 
-    var buf = new Buffer(10);
+    var buf = new Buffer(10); // 데이터 크기(Byte);
 
     console.log("버퍼 타입 : %s", Buffer.isBuffer(buf));
 

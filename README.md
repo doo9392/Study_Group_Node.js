@@ -11,4 +11,5 @@ Install [Node.js](https://nodejs.org/en).
 node -v
 
 # npm version check
+npm -v
 

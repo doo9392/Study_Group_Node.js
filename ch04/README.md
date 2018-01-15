@@ -78,7 +78,7 @@ module로 분리된 EventEmitter. calc.js의 파일 이용.
 폴더를 생성하고, 제거.
 
 ### `ch04_test15.js`
-로그 파일 남기기.
+로그 파일 남기기. (그런데 실행이 잘 안되는 것 같음)
 
 ### `output.txt`
 ch04_test7.js에 의해서 생성된 txt 파일.<br>

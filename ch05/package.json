@@ -4,8 +4,10 @@
   "description": "> ch 01~03",
   "main": "ch01_test0.js",
   "dependencies": {
+    "express": "^4.16.2",
     "moment": "^2.20.1",
     "nconf": "^0.10.0",
+    "server-static": "^2.0.5",
     "winston": "^2.4.0",
     "winston-daily-rotate-file": "^1.7.2"
   },

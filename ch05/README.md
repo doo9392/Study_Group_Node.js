@@ -24,8 +24,15 @@ ch05/
 		app4.js
 		app5.js
 		app6.js
+		app7.js
+		app8.js
+		app8_02.js
+		app9.js
 		public/
-			index.html
+			login.html
+			login2.html
+			login3.html
+			404.html
 			css/
 				style.css
 			js/
@@ -77,6 +84,24 @@ POST 방식의 서버구동.
 
 ### `Express/app5.js`
 redirect()를 이용한 링크이동.
+
+### `Express/app6.js`
+GET방식의 데이터 받아오기.
+
+### `Express/app7.js`
+POST방식의 데이터 받아오기.
+
+### `Express/app8.js`
+Router. <br>
+Router를 이용한 오류페이지.
+
+### `Express/app8_02.js`
+URL 파라미터 이용.
+
+### `Express/app9.js`
+Express Error Handler을 이용한 에러페이지 표시.
+
+### `Express/public`
 
 ### `test_img.jpg`
 ch05_test5.js를 구현하기 위한 테스트 이미지.

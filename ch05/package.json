@@ -4,7 +4,9 @@
   "description": "> ch 01~03",
   "main": "ch01_test0.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "express-error-handler": "^1.1.0",
     "moment": "^2.20.1",
     "nconf": "^0.10.0",
     "server-static": "^2.0.5",

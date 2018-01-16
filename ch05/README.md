@@ -18,25 +18,7 @@ ch05/
 	ch05_test7.js
 	ch05_test8.js
 	Express/
-		app.js
-		app2.js
-		app3.js
-		app4.js
-		app5.js
-		app6.js
-		app7.js
-		app8.js
-		app8_02.js
-		app9.js
-		app10.js
-		app11.js
-		app12.js
-		app13.js
-		public/
-			login.html
-			login2.html
-			login3.html
-			404.html
+		...
 	test_img.jpg
 ```
 
@@ -67,49 +49,6 @@ POST 방식의 서버구동.
 
 ### `Express`
 이전까지는 http만을 이용하였으나 이 후로는 Express도 활용.
-
-### `Express/app.js`
-익스프레스 맛보기.
-
-### `Express/app2.js`
-미들웨어로 클라이언트 응답 보내기.
-
-### `Express/app3.js`
-여러개의 미들웨어를 이용한 구동.
-
-### `Express/app4.js`
-익스프레스 send()메소드를 이용하여 JSON 출력.
-
-### `Express/app5.js`
-redirect()를 이용한 링크이동.
-
-### `Express/app6.js`
-GET방식의 데이터 받아오기.
-
-### `Express/app7.js`
-POST방식의 데이터 받아오기.
-
-### `Express/app8.js`
-Router. <br>
-Router를 이용한 오류페이지.
-
-### `Express/app8_02.js`
-URL 파라미터 이용.
-
-### `Express/app9.js`
-Express Error Handler을 이용한 에러페이지 표시.
-
-### `Express/app10.js`
-토큰 이용.
-
-### `Express/app11.js`
-Cookie.
-
-### `Express/app12.js`
-Session을 이용한 로그인 및 로그앗, 상품 페이지 제작.
-
-### `Express/app13.js`
-파일 업로드.
 
 ### `test_img.jpg`
 ch05_test5.js를 구현하기 위한 테스트 이미지.

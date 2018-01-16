@@ -28,17 +28,15 @@ ch05/
 		app8.js
 		app8_02.js
 		app9.js
+		app10.js
+		app11.js
+		app12.js
+		app13.js
 		public/
 			login.html
 			login2.html
 			login3.html
 			404.html
-			css/
-				style.css
-			js/
-				main.js
-			image/
-				test_img.jpg
 	test_img.jpg
 ```
 
@@ -101,7 +99,17 @@ URL 파라미터 이용.
 ### `Express/app9.js`
 Express Error Handler을 이용한 에러페이지 표시.
 
-### `Express/public`
+### `Express/app10.js`
+토큰 이용.
+
+### `Express/app11.js`
+Cookie.
+
+### `Express/app12.js`
+Session을 이용한 로그인 및 로그앗, 상품 페이지 제작.
+
+### `Express/app13.js`
+파일 업로드.
 
 ### `test_img.jpg`
 ch05_test5.js를 구현하기 위한 테스트 이미지.

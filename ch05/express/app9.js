@@ -1,11 +1,16 @@
 var express = require('express'),
   http = require('http'),
   path = require('path');
-
 var bodyParser = require('body-parser'), static = require('serve-static');
+var expressErrorHandler = require('express-error-handler');
 
 var app = express();
 var router = express.Router();
+var expressErrorHandler = expressErrorHandler({
+    static: {
+        '404': './public/404.html'
+    }
+});
 
 app.set('port', process.env.PORT || 3000);
 
@@ -28,10 +33,8 @@ router.route('/process/login').post((req, res) => {
 });
 
 app.use('/', router);
-
-app.all('*', (req, res) => {
-  res.status(404).send('<h1>ERROR - 페이지를 찾을 수 없습니다.</h1>');
-});
+app.use(expressErrorHandler.httpError(404));
+app.use(errorHandler);
 
 http.createServer(app).listen(3000, function() {
   console.log('Express 서버가 3000번 포트에서 시작됨.');

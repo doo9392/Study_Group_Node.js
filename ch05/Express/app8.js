@@ -7,7 +7,7 @@ var router = express.Router();
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
-app.use(static(path.join(__dirname, 'public')));
+app.use('/public', static(path.join(__dirname, 'public')));
 
 router.route('/process/login').post((req, res) => {
     console.log('/process/login 처리함');
@@ -24,11 +24,11 @@ router.route('/process/login').post((req, res) => {
     res.end();
 });
 
+app.use('/', router);
+
 app.all('*', (req, res) => {
     res.status(404).send('<h1>ERROR - 페이지를 찾을 수 없습니다.</h1>');
-})
-
-app.use('/', router);
+});
 
 http.createServer(app).listen(3000, () => {
     console.log('Express 서버가 3000port에서 시작됨');

@@ -52,6 +52,7 @@ router.route('/process/login').post((req, res) => {
 
                 res.write('<h1>로그인 성공</h1>');
                 res.write('<div><p>ID : ' + paramID + '</p></div>');
+                res.write('<div><p>NAME : ' + username + '</p></div>');
                 res.write('<div><p>Password : ' + paramPassword + '</p></div>');
                 res.write('<a href="/public/login.html">다시 로그인하기</a>');
 

@@ -16,6 +16,7 @@ ch06/
 	public/
 		404.html
 		adduser.html
+		listuser.html
 		login.html
 ```
 

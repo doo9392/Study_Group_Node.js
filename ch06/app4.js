@@ -35,6 +35,7 @@ function connectDB() {
 	DataBase = mongoose.connection;
 
 	DataBase.on('error', console.error.bind(console, 'mongoose connection error.'));
+
 	DataBase.on('open', () => {
 		console.log('데이터베이스에 연결되었습니다. : ' + databaseUrl);
 
@@ -49,11 +50,11 @@ function connectDB() {
 		});
 // ====================== //
 
-		UserSchema.static('findById', (id, callback) => {
+		UserSchema.static('findById', function(id, callback) {
 			return this.find({id : id}, callback);
 		});
 
-		UserSchema.static('findAll', (callback) => {
+		UserSchema.static('findAll', function(callback) {
 			return this.find({}, callback);
 		});
 
@@ -161,12 +162,14 @@ router.route('/process/adduser').post((req, res) => {
 				res.writeHead('200', {'Content-Type' : 'text/html;charset=utf8'});
 
 				res.write('<h2>사용자 추가 성공</h2>');
+				res.write('<a href="/public/login.html">로그인 하기</a>');
 
 				res.end();
 			} else {
 				res.writeHead('200', {'Content-Type' : 'text/html;charset=utf8'});
 
 				res.write('<h2>사용자 추가  실패</h2>');
+				res.write('<a href="/public/login.html">로그인 하기</a>');
 
 				res.end();
 			}
@@ -180,6 +183,7 @@ router.route('/process/adduser').post((req, res) => {
 	}
 });
 
+// 이용자 리스트.
 router.route('/process/listuser').post((req, res) => {
 	console.log('/process/listuser 호출됨.');
 
@@ -214,12 +218,14 @@ router.route('/process/listuser').post((req, res) => {
 				}
 
 				res.write('</ul></div>');
+				res.write('<a href="/public/login.html">로그인 하기</a>');
 
 				res.end();
 			} else {
 				res.writeHead('200', {'Content-Type' : 'text/html;charset=utf8'});
 
 				res.write('<h2>사용자 리스트 조회  실패</h2>');
+				res.write('<a href="/public/login.html">로그인 하기</a>');
 
 				res.end();
 			}

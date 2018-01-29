@@ -3,4 +3,5 @@ process.on('exit', () => {
 });
 setTimeout(() => {
   console.log('2초 후에 시스템 종료 시도함');
+  process.exit();
 }, 2000);
